@@ -1,0 +1,110 @@
+              Cyber Security Internship – Task 2 
+ 
+                        Phishing Email Analysis
+
+
+    Submitted by: Pallavi Premanand Asnotikar  
+    Internship Provider: Elevate Labs 
+     Task 2 – Analyze a Phishing Email
+
+
+Objective : 
+
+To analyze a phishing email and identify red flags such as spoofed addresses, suspicious links, urgent language, poor grammar, and social engineering tactics. This improves awareness and helps defend against phishing attacks.
+
+
+
+Steps I Followed to Complete the Task
+
+   Step 1: Understood Task Requirements
+Read the Task 2 instructions from the PDF provided in the internship.
+Understood that I needed to analyze a **phishing email** sample.
+
+
+Step 2: Found or Created a Phishing Email Sample
+I used a "realistic-looking fake phishing email" for educational analysis:
+
+From: security-update@microsoft-secure.com
+To: your_email@example.com
+Subject: Urgent Action Required: Password Reset
+
+Dear User,
+
+We have detected unusual activity in your Microsoft account. For your security, please reset your password immediately using the link below:
+
+🔗 https://m1crosoft-reset-password-login.security-alerts.com
+
+Failure to act in the next 24 hours will result in account suspension.
+
+Regards,
+Microsoft Security Team
+
+
+Step 3: Identified Red Flags in the Email
+
+     Indicator                              Description 
+ 
+ 1. Spoofed sender     :   The domain `microsoft-secure.com` looks legit but is "not" Microsoft's official domain. 
+ 2. Suspicious link    :   Link text says Microsoft, but the URL is: `m1crosoft-reset-password-login.security-alerts.com` — clearly fake. 
+ 3. Urgency language   :   Threatens account suspension in "24 hours" to create "panic" and force the user to act.
+ 4. Poor grammar       :   Unnatural phrasing like “Failure to act...” 
+ 5. Social engineering :   Pretends to be from a trusted brand (Microsoft) to "trick the user" into clicking and submitting login details. 
+
+
+
+ Step 4: Used Tools to Analyze (Optional)
+
+
+ Manually Inspected Sender & Links
+I carefully looked at the sender's email address and the link inside the message.
+
+ Example:
+
+The email said it's from: security-update@microsoft-secure.com
+
+But official Microsoft emails come from: @microsoft.com
+
+I noticed:
+
+The sender looks suspicious.
+The domain name is fake or lookalike (social engineering trick).
+also hovered over the link in the email (without clicking it!) to see the real destination URL:
+It pointed to something like:
+https://m1crosoft-reset-password-login.security-alerts.com
+(This is not Microsoft — it’s a phishing site!)
+
+(Optional) Explored Tools Like:
+
+🔗 MXToolbox Email Header Analyzer
+This tool lets you paste the full header of an email to check:
+Who actually sent the email
+If it passed SPF, DKIM, and DMARC security checks
+Server IP addresses
+Sending domain mismatches
+
+ These checks help spot email spoofing and fake origins.
+
+Gmail “Show Original” Feature
+
+If you open a suspicious email in Gmail:
+
+Click three dots (⋮) in the top-right corner of the email
+Choose “Show Original”
+This will open a new tab showing the raw email header.
+
+I can:
+See the real “Return-Path”
+Spot IP addresses
+Check if SPF and DKIM passed
+ 
+These steps help identify if the email really came from who it claims to.
+
+What I Learned in This Step:
+
+Real attackers spoof email addresses and use tricky links.
+Header tools give you clues about the true sender.
+You don't need to be an expert — just observing carefully can expose a phishing attack!
+
+ Step 5: Documented Analysis in This README — Detailed Explanation
+
+  i Wrote  all the steps which i followed above 
